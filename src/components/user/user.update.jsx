@@ -25,7 +25,6 @@ const UpdateUserModal = (props) => {
 
   const handleSubmitClick = async () => {
     const res = await updateUserAPI(id, fullName, phone);
-    // console.log(res.data);
     if (res.data) {
       notification.success({
         message: "Update user",

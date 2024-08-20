@@ -4,7 +4,7 @@ const TodoData = (props) => {
   const handleClick = (id) => {
     deleteTodo(id);
   };
-  console.log(props);
+
   return (
     <div className="todo-data">
       {todoList.map((item, index) => {
