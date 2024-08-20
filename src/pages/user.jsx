@@ -25,8 +25,6 @@ const UserPage = () => {
     }
   };
 
-  console.log(">>> check current ", pageSize);
-
   return (
     <div className="p-5">
       <UserForm loadUser={loadUser} />
