@@ -26,14 +26,13 @@ const App = () => {
     // await delay(3000);
     if (res.data) {
       setUser(res.data.user);
-      console.log(res.data);
     }
     setIsAppLoading(false);
   };
   return (
     <>
       {isAppLoading === true ? (
-        <div className="">
+        <div>
           <Spin />
         </div>
       ) : (
