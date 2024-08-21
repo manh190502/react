@@ -26,7 +26,7 @@ const TodoApp = () => {
   };
   return (
     <div className="todo-container">
-      <div className="todo-title">Todo List</div>
+      <div className="todo-title">Test List</div>
       <TodoNew addNewTodo={addNewTodo} />
       {todoList.length > 0 ? (
         <TodoData todoList={todoList} deleteTodo={deleteTodo} />

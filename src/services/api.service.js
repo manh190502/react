@@ -66,6 +66,10 @@ const deleteUserAPI = (id) => {
   const URL_BACKEND = `/api/v1/user/${id}`;
   return axios.delete(URL_BACKEND);
 };
+const deleteBookAPI = (id) => {
+  const URL_BACKEND = `/api/v1/book/${id}`;
+  return axios.delete(URL_BACKEND);
+};
 
 const fetchAllUser = (current, pageSize) => {
   const URL_BACKEND = `/api/v1/user?current=${current}&pageSize=${pageSize}`;
@@ -141,4 +145,5 @@ export {
   fetchAllBook,
   createBookAPI,
   updateBookAPI,
+  deleteBookAPI,
 };

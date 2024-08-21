@@ -6,8 +6,12 @@ const TodoNew = (props) => {
   const [valueInput, setValueInput] = useState("");
 
   const handleCLick = () => {
-    addNewTodo(valueInput);
-    setValueInput("");
+    if (valueInput === "") {
+      alert("Input Something!?");
+    } else {
+      addNewTodo(valueInput);
+      setValueInput("");
+    }
   };
 
   const handleOnChange = (valueInput) => {
@@ -17,7 +21,7 @@ const TodoNew = (props) => {
   return (
     <div className="todo-new">
       <input
-        className="border border-black rounded-lg"
+        className="p-1 border border-black rounded-lg"
         type="text"
         onChange={(e) => {
           handleOnChange(e.target.value);
