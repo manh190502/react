@@ -3,6 +3,7 @@ import { Drawer, Popconfirm, Table } from "antd";
 import { useState } from "react";
 import ViewBookDetail from "./view.bookdetail";
 import BookForm from "./book.form";
+import UpdateBook from "./update.book";
 
 const BookTable = (props) => {
   const {
@@ -18,6 +19,9 @@ const BookTable = (props) => {
 
   const [bookDetail, setBookDetail] = useState(null);
   const [isBookDetailOpen, setIsBookDetailOpen] = useState(false);
+
+  const [dataUpdate, setDataUpdate] = useState(null);
+  const [isModalUpdateOpen, setIsModalUpdateOpen] = useState(false);
 
   const columns = [
     {
@@ -78,8 +82,8 @@ const BookTable = (props) => {
         <div className="flex gap-5">
           <EditOutlined
             onClick={() => {
-              // setDataUpdate(record);
-              // setIsModalUpdateOpen(true);
+              setDataUpdate(record);
+              setIsModalUpdateOpen(true);
             }}
             className="cursor-pointer text-orange-500 "
           />
@@ -139,6 +143,14 @@ const BookTable = (props) => {
         setBookDetail={setBookDetail}
         isBookDetailOpen={isBookDetailOpen}
         setIsBookDetailOpen={setIsBookDetailOpen}
+      />
+
+      <UpdateBook
+        dataUpdate={dataUpdate}
+        setDataUpdate={setDataUpdate}
+        isModalUpdateOpen={isModalUpdateOpen}
+        setIsModalUpdateOpen={setIsModalUpdateOpen}
+        loadBook={loadBook}
       />
     </div>
   );

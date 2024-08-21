@@ -40,6 +40,27 @@ const updateUserAPI = (avatar, _id, fullName, phone) => {
   };
   return axios.put(URL_BACKEND, data);
 };
+const updateBookAPI = (
+  _id,
+  thumbnail,
+  mainText,
+  author,
+  price,
+  quantity,
+  category
+) => {
+  const URL_BACKEND = "/api/v1/book";
+  const data = {
+    _id: _id,
+    thumbnail: thumbnail,
+    mainText: mainText,
+    author: author,
+    price: price,
+    quantity: quantity,
+    category: category,
+  };
+  return axios.put(URL_BACKEND, data);
+};
 
 const deleteUserAPI = (id) => {
   const URL_BACKEND = `/api/v1/user/${id}`;
@@ -119,4 +140,5 @@ export {
   logoutAPI,
   fetchAllBook,
   createBookAPI,
+  updateBookAPI,
 };
