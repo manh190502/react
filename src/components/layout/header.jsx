@@ -8,7 +8,7 @@ import {
   LoginOutlined,
   AliwangwangOutlined,
 } from "@ant-design/icons";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/auth.context";
 import { logoutAPI } from "../../services/api.service";
 
@@ -18,6 +18,20 @@ const Header = () => {
   const navigate = useNavigate();
 
   const { user, setUser } = useContext(AuthContext);
+
+  useEffect(() => {
+    if (location && location.pathname) {
+      const allRoutes = ["user", "books"];
+      const currentRoute = allRoutes.find(
+        (item) => `/${item}` === location.pathname
+      );
+      if (currentRoute) {
+        setCurrent(currentRoute);
+      } else {
+        setCurrent("home");
+      }
+    }
+  }, [location]);
 
   const handleLogOut = async () => {
     const res = await logoutAPI();
@@ -52,7 +66,7 @@ const Header = () => {
     },
     {
       label: <Link to={"/user"}>User</Link>,
-      key: "users",
+      key: "user",
       icon: <UserOutlined />,
     },
     {
