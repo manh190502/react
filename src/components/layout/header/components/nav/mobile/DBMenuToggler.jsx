@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { menuToggle } from "../../../../../../features/toggle/toggleSlice";
 
-const MenuToggler = () => {
+const DBMenuToggler = () => {
   const dispatch = useDispatch();
   // menu togggle handler
   const menuToggleHandler = () => {
@@ -21,4 +21,4 @@ const MenuToggler = () => {
   );
 };
 
-export default MenuToggler;
+export default DBMenuToggler;

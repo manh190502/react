@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import recentJobApplied from "../../../../data/job-featured";
+import recentJobApplied from "../../../../../data/job-featured";
 
 const JobApplied = () => {
   return (

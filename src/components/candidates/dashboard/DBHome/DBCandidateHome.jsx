@@ -5,12 +5,13 @@ import JobApplied from "./components/JobApplied";
 
 import DBCandidateHeader from "@/components/layout/header/components/dashboard/DBCandidateHeader";
 import MobileMenu from "@/components/layout/header/components/nav/mobile/MobileMenu";
-import DBCandidateSidebar from "@/components/layout/header/components/nav/mobile/DBCandidateSidebar";
 
 import CandidateBreadCrumb from "./components/CandidateBreadCrumb";
-import MenuToggler from "@/components/layout/header/components/nav/mobile/MenuToggler";
+
 import TopCardBlock from "./components/TopCardBlock";
 import CopyrightFooterDB from "@/components/layout/footer/components/CopyrightFooterDB";
+import DBCandidateSidebar from "../menusidebar/DBCandidateSidebar";
+import DBMenuToggler from "@/components/layout/header/components/nav/mobile/DBMenuToggler";
 
 const DBCandidateHome = () => {
   return (
@@ -33,7 +34,7 @@ const DBCandidateHome = () => {
           <CandidateBreadCrumb title="Howdy, Jerome!!" />
           {/* breadCrumb */}
 
-          <MenuToggler />
+          <DBMenuToggler />
           {/* Collapsible sidebar button */}
 
           <div className="row">

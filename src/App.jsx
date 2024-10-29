@@ -28,6 +28,8 @@ import LogInPage from "./pages/auth/LogInPage";
 import RegisterPage from "./pages/auth/RegisterPage";
 import PageNotFound from "./pages/404/PageNotFound";
 import DBCandidatePage from "./pages/dashboard/candidates/DBCandidatePage";
+import MyProfilePage from "./pages/dashboard/candidates/MyProfilePage";
+import AppliedJobPage from "./pages/dashboard/candidates/AppliedJobPage";
 
 function App() {
   useEffect(() => {
@@ -63,7 +65,10 @@ function App() {
 
                 <Route path="candidates-dashboard">
                   <Route path="dashboard" element={<DBCandidatePage />} />
-                  {/* <Route path="applied-jobs" element={<AppliedJobsPage />} />
+                  <Route path="my-profile" element={<MyProfilePage />} />
+                  <Route path="applied-jobs" element={<AppliedJobPage />} />
+
+                  {/* 
                   <Route
                     path="change-password"
                     element={<ChangePasswordPage />}
@@ -71,7 +76,6 @@ function App() {
                   <Route path="cv-manager" element={<CVMannagerPage />} />
                   <Route path="job-alerts" element={<JobAlertPage />} />
                   <Route path="messages" element={<MessageesPage />} />
-                  <Route path="my-profile" element={<MyProfilePage />} />
                   <Route path="my-resume" element={<MyResumePage />} />
                   <Route path="packages" element={<PackagePage />} />
                   <Route

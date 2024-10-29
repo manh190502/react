@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import candidatesuData from "../../../../../../data/candidatesMenuData";
-import { isActiveLink } from "../../../../../../utils/linkActiveChecker";
+import candidatesuData from "../../../../data/candidatesMenuData";
+import { isActiveLink } from "../../../../utils/linkActiveChecker";
 
 import { useDispatch, useSelector } from "react-redux";
-import { menuToggle } from "../../../../../../features/toggle/toggleSlice";
+import { menuToggle } from "../../../../features/toggle/toggleSlice";
 
 import { useLocation } from "react-router-dom";
 const DBCandidateSidebar = () => {
