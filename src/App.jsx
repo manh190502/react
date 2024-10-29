@@ -30,6 +30,7 @@ import PageNotFound from "./pages/404/PageNotFound";
 import DBCandidatePage from "./pages/dashboard/candidates/DBCandidatePage";
 import MyProfilePage from "./pages/dashboard/candidates/MyProfilePage";
 import AppliedJobPage from "./pages/dashboard/candidates/AppliedJobPage";
+import CVManagerPage from "./pages/dashboard/candidates/CVManagerPage";
 
 function App() {
   useEffect(() => {
@@ -67,13 +68,13 @@ function App() {
                   <Route path="dashboard" element={<DBCandidatePage />} />
                   <Route path="my-profile" element={<MyProfilePage />} />
                   <Route path="applied-jobs" element={<AppliedJobPage />} />
+                  <Route path="cv-manager" element={<CVManagerPage />} />
 
                   {/* 
                   <Route
                     path="change-password"
                     element={<ChangePasswordPage />}
                   />
-                  <Route path="cv-manager" element={<CVMannagerPage />} />
                   <Route path="job-alerts" element={<JobAlertPage />} />
                   <Route path="messages" element={<MessageesPage />} />
                   <Route path="my-resume" element={<MyResumePage />} />
@@ -99,7 +100,7 @@ function App() {
           {/* Toastify */}
           <ToastContainer
             position="bottom-right"
-            autoClose={500}
+            autoClose={2000}
             hideProgressBar={false}
             newestOnTop={false}
             closeOnClick
