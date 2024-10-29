@@ -47,7 +47,7 @@ const DBCandidateSidebar = () => {
         </ul>
         {/* End navigation */}
 
-        <div className="skills-percentage">
+        {/* <div className="skills-percentage">
           <h4>Skills Percentage</h4>
           <p>
             `Put value for <strong>Cover Image</strong> field to increase your
@@ -67,8 +67,8 @@ const DBCandidateSidebar = () => {
               text={`${percentage}%`}
             />
           </div>{" "}
-          {/* <!-- Pie Graph --> */}
-        </div>
+          <!-- Pie Graph -->
+        </div> */}
       </div>
     </div>
   );
