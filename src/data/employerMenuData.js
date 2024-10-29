@@ -10,7 +10,7 @@ const employerMenu = [
     id: 2,
     name: "Company Profile",
     icon: "la-user-tie",
-    routePath: "/employers-dashboard/company-profile",
+    routePath: "/employers-dashboard/employer-profile",
     active: "",
   },
   {
@@ -84,4 +84,4 @@ const employerMenu = [
     active: "",
   },
 ];
-export default  employerMenu
+export default employerMenu;
