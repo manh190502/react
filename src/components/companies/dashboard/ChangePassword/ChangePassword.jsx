@@ -1,10 +1,10 @@
 import DBCandidateHeader from "@/components/layout/header/components/dashboard/DBCandidateHeader";
 import MobileMenu from "@/components/layout/header/components/nav/mobile/MobileMenu";
-import BreadCrumb from "./components/BreadCrumb";
+import DBEmployerSidebar from "../common/DBEmployerSidebar";
+import BreadCrumb from "../common/BreadCrumb";
 import DBMenuToggler from "@/components/layout/header/components/nav/mobile/DBMenuToggler";
 import FormChangePassword from "./components/FormChangePassword";
 import CopyrightFooterDB from "@/components/layout/footer/components/CopyrightFooterDB";
-import DBCandidateSidebar from "../menusidebar/DBCandidateSidebar";
 
 const ChangePassword = () => {
   return (
@@ -18,7 +18,7 @@ const ChangePassword = () => {
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <DBCandidateSidebar />
+      <DBEmployerSidebar />
       {/* <!-- End Candidates Sidebar Menu --> */}
 
       {/* <!-- Dashboard --> */}

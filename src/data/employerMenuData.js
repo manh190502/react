@@ -35,34 +35,6 @@ const employerMenu = [
     active: "",
   },
   {
-    id: 6,
-    name: "Shortlisted Resumes",
-    icon: "la-bookmark-o",
-    routePath: "/employers-dashboard/shortlisted-resumes",
-    active: "",
-  },
-  {
-    id: 7,
-    name: "Packages",
-    icon: "la-box",
-    routePath: "/employers-dashboard/packages",
-    active: "",
-  },
-  {
-    id: 8,
-    name: "Messages",
-    icon: "la-comment-o",
-    routePath: "/employers-dashboard/messages",
-    active: "",
-  },
-  {
-    id: 9,
-    name: "Resume Alerts",
-    icon: "la-bell",
-    routePath: "/employers-dashboard/resume-alerts",
-    active: "",
-  },
-  {
     id: 10,
     name: "Change Password",
     icon: "la-lock",
@@ -74,13 +46,6 @@ const employerMenu = [
     name: "Logout",
     icon: "la-sign-out",
     routePath: "/login",
-    active: "",
-  },
-  {
-    id: 12,
-    name: "Delete Profile",
-    icon: "la-trash",
-    routePath: "/",
     active: "",
   },
 ];
