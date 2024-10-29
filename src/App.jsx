@@ -31,6 +31,7 @@ import DBCandidatePage from "./pages/dashboard/candidates/DBCandidatePage";
 import MyProfilePage from "./pages/dashboard/candidates/MyProfilePage";
 import AppliedJobPage from "./pages/dashboard/candidates/AppliedJobPage";
 import CVManagerPage from "./pages/dashboard/candidates/CVManagerPage";
+import ChangePasswordPage from "./pages/dashboard/candidates/ChangePassword";
 
 function App() {
   useEffect(() => {
@@ -69,12 +70,13 @@ function App() {
                   <Route path="my-profile" element={<MyProfilePage />} />
                   <Route path="applied-jobs" element={<AppliedJobPage />} />
                   <Route path="cv-manager" element={<CVManagerPage />} />
-
-                  {/* 
                   <Route
                     path="change-password"
                     element={<ChangePasswordPage />}
                   />
+
+                  {/* 
+
                   <Route path="job-alerts" element={<JobAlertPage />} />
                   <Route path="messages" element={<MessageesPage />} />
                   <Route path="my-resume" element={<MyResumePage />} />
