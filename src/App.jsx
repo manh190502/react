@@ -36,6 +36,7 @@ import DBEmployerPage from "./pages/dashboard/employers/DBEmployerPage";
 import EmployerProfilePage from "./pages/dashboard/employers/EmployerProfilePage";
 import PostJobPage from "./pages/dashboard/employers/PostJobPage";
 import ManageJob from "./components/companies/dashboard/ManageJob/ManageJob";
+import AllApplicantPage from "./pages/dashboard/employers/AllApplicantPage";
 
 function App() {
   useEffect(() => {
@@ -71,13 +72,11 @@ function App() {
                   />
                   <Route path="post-jobs" element={<PostJobPage />} />
                   <Route path="manage-jobs" element={<ManageJob />} />
+                  <Route path="all-applicants" element={<AllApplicantPage />} />
                   {/* 
                   
 
-                  <Route
-                    path="all-applicants"
-                    element={<AllApplicantsEmploeesPage />}
-                  />
+
                   <Route
                     path="shortlisted-resumes"
                     element={<ShortListedResumeEmploeeDBPage />}
