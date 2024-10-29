@@ -7,12 +7,8 @@ const CopyrightFooter = () => {
         <div className="outer-box">
           <div className="copyright-text">
             © {new Date().getFullYear()} jobfind by{" "}
-            <a
-              href="https://themeforest.net/user/ib-themes"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ib-themes
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              manh-jang
             </a>
             . All Right Reserved.
           </div>

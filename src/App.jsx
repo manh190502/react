@@ -24,10 +24,10 @@ import CandidateListPage from "./pages/candidates/CandidateListPage";
 import CandidateDetailsPage from "./pages/candidates/CandidateDetailsPage";
 import BlogListPage from "./pages/blogs/BlogListPage";
 import BlogDetailsPage from "./pages/blogs/BlogDetailsPage";
-import LoginPage from "./pages/auth/LogInPage";
 import LogInPage from "./pages/auth/LogInPage";
 import RegisterPage from "./pages/auth/RegisterPage";
 import PageNotFound from "./pages/404/PageNotFound";
+import DBCandidatePage from "./pages/dashboard/candidates/DBCandidatePage";
 
 function App() {
   useEffect(() => {
@@ -60,6 +60,25 @@ function App() {
                   path="candidate-details/:id"
                   element={<CandidateDetailsPage />}
                 />
+
+                <Route path="candidates-dashboard">
+                  <Route path="dashboard" element={<DBCandidatePage />} />
+                  {/* <Route path="applied-jobs" element={<AppliedJobsPage />} />
+                  <Route
+                    path="change-password"
+                    element={<ChangePasswordPage />}
+                  />
+                  <Route path="cv-manager" element={<CVMannagerPage />} />
+                  <Route path="job-alerts" element={<JobAlertPage />} />
+                  <Route path="messages" element={<MessageesPage />} />
+                  <Route path="my-profile" element={<MyProfilePage />} />
+                  <Route path="my-resume" element={<MyResumePage />} />
+                  <Route path="packages" element={<PackagePage />} />
+                  <Route
+                    path="short-listed-jobs"
+                    element={<ShortListedJobsPage />}
+                  /> */}
+                </Route>
 
                 <Route path="blog-list" element={<BlogListPage />} />
                 <Route path="blog-details/:id" element={<BlogDetailsPage />} />
