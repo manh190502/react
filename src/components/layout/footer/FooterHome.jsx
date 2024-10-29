@@ -26,18 +26,21 @@ const FooterHome = () => {
               <div className="footer-column about-widget">
                 <div className="logo">
                   <a href="#">
-                    <img src="/images/logo-2.svg" alt="brand" />
+                    <img src="/images/logo.png" alt="brand" />
                   </a>
                 </div>
                 <p className="phone-num">
                   <span>Call us </span>
-                  <a href="thebeehost@support.com">123 456 7890</a>
+                  <a href="#">0988 888 888</a>
                 </p>
                 <p className="address">
-                  329 Queensberry Street, North Melbourne VIC
-                  <br /> 3051, Australia. <br />
-                  <a href="mailto:support@jobfind.com" className="email">
-                    support@jobfind.com
+                  Luong Nha, Thanh Son
+                  <br /> Phu Tho, Viet Nam. <br />
+                  <a
+                    href="mailto:manh.dc204583@sis.hust.edu.vn"
+                    className="email"
+                  >
+                    manh.dc204583@sis.hust.edu.vn
                   </a>
                 </p>
               </div>
