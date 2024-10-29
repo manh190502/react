@@ -35,7 +35,7 @@ const DBCandidateHeader = () => {
             <div className="logo-box">
               <div className="logo">
                 <Link to="/">
-                  <img alt="brand" src="/images/logo.svg" />
+                  <img alt="brand" src="/images/logo-j.svg" />
                 </Link>
               </div>
             </div>

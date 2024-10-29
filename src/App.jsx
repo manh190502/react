@@ -32,6 +32,9 @@ import MyProfilePage from "./pages/dashboard/candidates/MyProfilePage";
 import AppliedJobPage from "./pages/dashboard/candidates/AppliedJobPage";
 import CVManagerPage from "./pages/dashboard/candidates/CVManagerPage";
 import ChangePasswordPage from "./pages/dashboard/candidates/ChangePassword";
+import DBEmployerPage from "./pages/dashboard/employers/DBEmployerPage";
+import EmployerProfilePage from "./pages/dashboard/employers/EmployerProfilePage";
+import PostJobPage from "./pages/dashboard/employers/PostJobPage";
 
 function App() {
   useEffect(() => {
@@ -59,6 +62,39 @@ function App() {
                   element={<CompanyDetailsPage />}
                 />
 
+                <Route path="employers-dashboard">
+                  <Route path="dashboard" element={<DBEmployerPage />} />
+                  <Route
+                    path="employer-profile"
+                    element={<EmployerProfilePage />}
+                  />
+                  <Route path="post-jobs" element={<PostJobPage />} />
+                  {/* 
+                  
+                  <Route
+                    path="manage-jobs"
+                    element={<ManageJobsEmploeeDBPage />}
+                  />
+                  <Route
+                    path="all-applicants"
+                    element={<AllApplicantsEmploeesPage />}
+                  />
+                  <Route
+                    path="shortlisted-resumes"
+                    element={<ShortListedResumeEmploeeDBPage />}
+                  />
+                  <Route path="packages" element={<PackageEmploeeDBPage />} />
+                  <Route path="messages" element={<MessageEmploeeDBPage />} />
+                  <Route
+                    path="resume-alerts"
+                    element={<ResumeAlertsEmploeeDBPage />}
+                  />
+                  <Route
+                    path="change-password"
+                    element={<ChangePasswordEmploeeDBPage />}
+                  /> */}
+                </Route>
+
                 <Route path="candidates-list" element={<CandidateListPage />} />
                 <Route
                   path="candidate-details/:id"
@@ -74,17 +110,6 @@ function App() {
                     path="change-password"
                     element={<ChangePasswordPage />}
                   />
-
-                  {/* 
-
-                  <Route path="job-alerts" element={<JobAlertPage />} />
-                  <Route path="messages" element={<MessageesPage />} />
-                  <Route path="my-resume" element={<MyResumePage />} />
-                  <Route path="packages" element={<PackagePage />} />
-                  <Route
-                    path="short-listed-jobs"
-                    element={<ShortListedJobsPage />}
-                  /> */}
                 </Route>
 
                 <Route path="blog-list" element={<BlogListPage />} />
